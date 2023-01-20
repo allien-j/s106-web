@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Base de la mise en forme */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Optima", sans-serif;
+    scroll-behavior: smooth;
+}

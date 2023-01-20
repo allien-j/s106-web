@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Toutes les feuilles de style -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <!---------------------------------->
+
+    <title>DAMAJIN - Contact</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="img/logo-uca.png" alt="Logo IUT" />
+      </a>
+      <nav>
+        <input type="checkbox" id="nav-button-click" />
+        <div id="nav-button"></div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="informations.html">Informations</a></li>
+          <li><a href="amenagements.html">Aménagements</a></li>
+          <li><a href="enquete.html">Enquête</a></li>
+          <li><a href="#" id="nav-here">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <form>
+          <fieldset>
+            <h1>Nous Contacter</h1>
+            <p>
+              Remplissez ce formulaire si vous avez des questions concernant le
+              projet.
+            </p>
+            <label>Nom<abbr title="Ce champ est obligatoire">(*)</abbr></label>
+            <input type="text" required />
+
+            <label>
+              Entreprise<abbr title="Ce champ est obligatoire">(*)</abbr>
+            </label>
+            <input type="text" required />
+
+            <label
+              >Courriel<abbr title="Ce champ est obligatoire">(*)</abbr></label
+            >
+            <input type="email" required />
+            <label>
+              Commentaire<abbr title="Ce champ est obligatoire">(*)</abbr>
+            </label>
+            <textarea rows="10" required></textarea>
+          </fieldset>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; DAMAJIN 2023</p>
+      <a href="https://iut.univ-cotedazur.fr"
+        ><img src="img/logo-iut.png" alt="Logo IUT"
+      /></a>
+    </footer>
+  </body>
+</html>

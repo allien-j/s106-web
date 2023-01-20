@@ -1,0 +1,21 @@
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    margin:25px
+}
+
+footer p:hover{
+    color: rgb(0, 195, 255);
+    transition: 0.3s;
+}
+
+footer img{
+    height: 40px;
+    margin-right: 25px;
+}

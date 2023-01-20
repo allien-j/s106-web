@@ -1,0 +1,360 @@
+#enquete-form{
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#enquete-form > form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#enquete-form fieldset{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+#enquete-form fieldset > div{
+  min-height: 90vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#enquete-form h1{
+  color: rgb(0, 195, 255);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+#enquete-form a{
+  margin-top: 35px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(85, 218, 103);
+  font-size: 1.5em;
+  text-decoration: none;
+  color:white;
+}
+
+#enquete-form a:hover{
+  background-color: rgb(44, 163, 8);
+  transition: 0.3s;
+}
+
+#enquete-form > form > fieldset > #Q8 > div > div > label:first-of-type,
+#enquete-form fieldset > div > label:first-of-type{
+  color: rgb(85, 218, 103);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+
+#enquete-form input[type=text]{
+  width: 70%;
+  height: 50px;
+  border: solid rgb(59, 155, 29);
+  border-width: 0px 0px 2px 0px;
+  font-size: 2em;
+  padding: 5px;
+  color: rgb(161, 161, 161);
+  text-align: center;
+}
+
+#enquete-form input[type=text]:focus{
+  color: black;
+  outline-style: none;
+}
+
+#enquete-form select{
+  width: 70%;
+  height: 50px;
+  border: solid rgb(44, 163, 8);
+  border-width: 0px 0px 2px 0px;
+  font-size: 2em;
+  padding: 5px;
+  color: black;
+  text-align: center;
+}
+
+#enquete-form select:focus{
+  outline-style: none;
+}
+
+#enquete-form input[type=checkbox],
+#enquete-form input[type=radio]{
+  display: none;
+}
+
+#enquete-form input[type=checkbox] + label,
+#enquete-form input[type=radio] + label{
+  background-color: rgb(85, 218, 103);
+  font-size: 1.9em;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#enquete-form input[type=checkbox]:checked + label,
+#enquete-form input[type=radio]:checked + label{
+  background-color: rgb(53, 161, 67);
+  transition: 0.3s;
+}
+
+#enquete-form #Q5 > div > div:last-child{
+  display: none;
+}
+
+#enquete-form #Q5 > div {
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 20% 30%  30% 20%;
+}
+
+#enquete-form #Q5 > div > #proportion-oui + label{
+  grid-column: 2;
+}
+
+#enquete-form #Q5 > div > #proportion-non + label{
+  grid-column: 3;
+}
+
+#enquete-form #Q5 > div > #proportion-non:checked + label{
+  background-color: rgb(207, 6, 6);
+}
+
+
+#enquete-form #Q5 #proportion-oui:checked ~ div:last-child{
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  grid-column: 1/5;
+  font-size: 2em;
+}
+
+#enquete-form #Q5 > div > div{
+  justify-content: center;
+}
+
+#enquete-form #Q5 > div > div > span{
+  margin: 0 10px;
+  color: rgb(85, 218, 103);
+}
+
+#enquete-form #Q5 > div > div > input{
+  width: 100%;
+}
+
+#enquete-form #Q6 > div{
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 20% 30%  30% 20%;
+}
+
+#enquete-form #Q6 > div > select{
+  display: none;
+}
+
+#enquete-form #Q6 > div > #pollution-oui + label{
+  grid-column: 2;
+}
+
+#enquete-form #Q6 > div > #pollution-non + label{
+  grid-column: 3;
+}
+
+#enquete-form #Q6 > div > #pollution-non:checked + label{
+  background-color: rgb(207, 6, 6);
+}
+
+#enquete-form #Q6 #pollution-oui:checked ~ select:last-child{
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  grid-column: 1/5;
+}
+
+/**/
+
+#enquete-form #Q8 > div{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 20%  20% 30%;
+}
+
+#enquete-form #Q8 > div > div{
+  display: none;
+}
+
+#enquete-form #Q8 > div > #invest-oui + label{
+  grid-column: 2;
+}
+
+#enquete-form #Q8 > div > #invest-non + label{
+  grid-column: 3;
+}
+
+#enquete-form #Q8 > div > #invest-non:checked + label{
+  background-color: rgb(207, 6, 6);
+}
+
+#enquete-form #Q8 #invest-oui:checked ~ div:first-of-type{
+  display: flex;
+}
+
+#enquete-form #Q8 #invest-non:checked ~ div:last-of-type{
+  display: flex;
+}
+
+#enquete-form #Q8 > div > div{
+  flex-direction: column;
+  width: 100%;
+  margin-top: 90px;
+  grid-column: 1/5;
+}
+
+#enquete-form #Q8 > div > div > div{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 20%  20% 30%;
+}
+
+#enquete-form #Q8 #partener-oui + label{
+  grid-column: 2;
+}
+
+#enquete-form #Q8 #partener-non + label{
+  grid-column: 3;
+}
+
+#enquete-form #Q8 #partener-non:checked + label{
+  background-color: rgb(207, 6, 6);
+}
+
+
+#enquete-form #Q4 div,
+#enquete-form #Q7 div,
+#enquete-form #Q8 > div > div:first-of-type > div{
+  display: inline-flex;
+}
+
+#enquete-form #Q4 > div > label,
+#enquete-form #Q7 > div > label,
+#enquete-form #Q8 > div > div:first-of-type > div > label{
+  display: inline-flex;
+  align-items: center;
+}
+
+#send-enquete{
+  background-color: rgb(0, 195, 255);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 10px 50px;
+  margin: 70px 0;
+
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.527) inset;
+  border-width: 0px 2px 2px 0px;
+  border-color: rgba(0, 0, 0, 0.719);
+}
+
+#send-enquete:hover{
+  background-color: rgb(0, 119, 255);
+}
+
+#send-enquete:active{
+  border-width: 2px 0px 0px 2px;
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.719);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 570px){
+
+  #enquete-form input[type=checkbox] + label, 
+  #enquete-form input[type=radio] + label{
+    font-size: 0.6em;
+    margin: 0 5px;
+  }
+
+  #enquete-form span{
+    font-size: 0.5em;
+  }
+
+  #enquete-form a{
+    font-size: 0.7em;
+  }
+
+  #enquete-form h1{
+    font-size: 3.5em;
+  }
+
+  #enquete-form select,
+  #enquete-form > form > fieldset > #Q8 > div > div > label:first-of-type,
+  #enquete-form fieldset > div > label:first-of-type{
+    font-size: 1.2em;
+  }
+
+  #enquete-form input[type=text],
+  #enquete-form select{
+    font-size: 1em;
+  }
+
+  #send-enquete{
+    font-size: 0.8em;
+}
+  
+}
+
+@media screen and (min-width: 550px) and (max-width: 830px){
+
+  #enquete-form input[type=checkbox] + label, 
+  #enquete-form input[type=radio] + label{
+    font-size: 1.2em;
+  }
+
+  #enquete-form span{
+    font-size: 0.7em;
+  }
+
+  #enquete-form a{
+    font-size: 1em;
+  }
+
+  #enquete-form select,
+  #enquete-form > form > fieldset > #Q8 > div > div > label:first-of-type,
+  #enquete-form fieldset > div > label:first-of-type{
+    font-size: 2em;
+  }
+
+  #enquete-form input[type=text],
+  #enquete-form select{
+    font-size: 1.5em;
+  }
+  
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Enquête" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- A REMPLIR-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/enquete.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <title>Enquête Professionnelle</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="img/logo-uca.png" alt="Logo IUT" />
+      </a>
+      <nav>
+        <input type="checkbox" id="nav-button-click" />
+        <div id="nav-button"></div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="informations.html">Informations</a></li>
+          <li><a href="amenagements.html">Aménagements</a></li>
+          <li><a href="#" id="nav-here">Enquête</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="enquete-form">
+        <form action="?">
+          <fieldset>
+            <div>
+              <h1>Enquête</h1>
+              <a href="#Q1">Faire le Questionnaire</a>
+            </div>
+            <div id="Q1">
+              <label> Quel est le nom de votre entreprise&nbsp;? </label>
+              <input type="text" />
+              <a href="#Q2">Suivant</a>
+            </div>
+            <div id="Q2">
+              <label>
+                Dans quel secteur d’activité est spécialisée votre
+                entreprise&nbsp;?
+              </label>
+              <select>
+                <option>Services aux entreprises</option>
+                <option>Administration / Collectivité</option>
+                <option>Industrie</option>
+                <option>Education / Santé / Action sociale</option>
+                <option>Communication / Marketing</option>
+                <option>Commerce</option>
+                <option>Autre</option>
+              </select>
+              <a href="#Q3">Suivant</a>
+            </div>
+            <div id="Q3">
+              <label>Où se situent vos locaux&nbsp;?</label>
+              <select>
+                <option>Centre-ville</option>
+                <option>Nice Nord</option>
+                <option>Nice Ouest</option>
+                <option>Nice Est</option>
+              </select>
+              <a href="#Q4">Suivant</a>
+            </div>
+            <div id="Q4">
+              <label>Combien de personnes travaillent sur le site&nbsp;?</label>
+              <div>
+                <input type="radio" name="personnes" id="personnes-1" />
+                <label for="personnes-1">Moins de 100</label>
+                <input type="radio" name="personnes" id="personnes-2" />
+                <label for="personnes-2">100 à 249</label>
+                <input type="radio" name="personnes" id="personnes-3" />
+                <label for="personnes-3">250 à 1000</label>
+                <input type="radio" name="personnes" id="personnes-4" />
+                <label for="personnes-4">Plus de 1000</label>
+              </div>
+              <a href="#Q5">Suivant</a>
+            </div>
+            <div id="Q5">
+              <label>
+                Connaissez-vous la proportion de vos employés qui viennent au
+                travail autrement qu’en conduisant&nbsp;?
+              </label>
+              <div>
+                <input type="radio" name="proportion" id="proportion-oui" />
+                <label for="proportion-oui">Oui</label>
+                <input type="radio" name="proportion" id="proportion-non" />
+                <label for="proportion-non">Non</label>
+                <div>
+                  <span>0%</span>
+                  <input type="range" min="0" max="100" step="1" />
+                  <span>100%</span>
+                </div>
+              </div>
+              <a href="#Q6">Suivant</a>
+            </div>
+            <div id="Q6">
+              <label>
+                Avez-vous encouragé vos employés à utiliser des solutions de
+                transports moins polluantes&nbsp;?
+              </label>
+              <div>
+                <input type="radio" name="pollution" id="pollution-oui" />
+                <label for="pollution-oui">Oui</label>
+                <input type="radio" name="pollution" id="pollution-non" />
+                <label for="pollution-non">Non</label>
+                <select>
+                  <option>Transports collectifs (bus, train…)</option>
+                  <option>Vélo / Roller / Trottinette…</option>
+                  <option>Marche à pied</option>
+                  <option>Autopartage</option>
+                  <option>Covoiturage</option>
+                  <option>Véhicule électrique</option>
+                  <option>Télétravail</option>
+                </select>
+              </div>
+              <a href="#Q7">Suivant</a>
+            </div>
+            <div id="Q7">
+              <label>
+                Quels sont les aménagements proches de vos locaux&nbsp;?
+              </label>
+              <div>
+                <input type="checkbox" id="amenagements-1" />
+                <label for="amenagements-1">Arrêt de bus</label>
+                <input type="checkbox" id="amenagements-2" />
+                <label for="amenagements-2">Piste cyclable</label>
+                <input type="checkbox" id="amenagements-3" />
+                <label for="amenagements-3">Abris à vélo</label>
+                <input type="checkbox" id="amenagements-4" />
+                <label for="amenagements-4">Voie piétonne</label>
+                <input type="checkbox" id="amenagements-5" />
+                <label for="amenagements-5">Borne de recharge</label>
+              </div>
+              <a href="#Q8">Suivant</a>
+            </div>
+            <div id="Q8">
+              <label>
+                Seriez-vous prêt à investir dans des aménagements facilitant les
+                déplacements durables jusqu’à votre entreprise&nbsp;?
+              </label>
+              <div>
+                <input type="radio" name="invest" id="invest-oui" />
+                <label for="invest-oui">Oui</label>
+                <input type="radio" name="invest" id="invest-non" />
+                <label for="invest-non">Non</label>
+                <div>
+                  <label>
+                    Quels sont les aménagements dont vous souhaiteriez voir le
+                    développement&nbsp;?
+                  </label>
+                  <div>
+                    <input type="checkbox" id="invest-1" />
+                    <label for="invest-1">Application autopartage</label>
+                    <input type="checkbox" id="invest-2" />
+                    <label for="invest-2">Piste cyclable</label>
+                    <input type="checkbox" id="invest-3" />
+                    <label for="invest-3">Voie piétonne</label>
+                    <input type="checkbox" id="invest-4" />
+                    <label for="invest-4">Abonnement transports</label>
+                  </div>
+                </div>
+                <div>
+                  <label>
+                    Un partenariat avec la ville de Nice débloquerait-il la
+                    situation&nbsp;?
+                  </label>
+                  <div>
+                    <input type="radio" name="partener" id="partener-oui" />
+                    <label for="partener-oui">Oui</label>
+                    <input type="radio" name="partener" id="partener-non" />
+                    <label for="partener-non">Non</label>
+                  </div>
+                </div>
+              </div>
+              <button id="send-enquete">Envoyer</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <!-- Pied de page -->
+    <footer>
+      <p>&copy; DAMAJIN 2023</p>
+      <a href="https://iut.univ-cotedazur.fr"
+        ><img src="img/logo-iut.png" alt="Logo IUT"
+      /></a>
+    </footer>
+  </body>
+</html>
