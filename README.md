@@ -1,5 +1,5 @@
-# s106-web
+# Project in only XHTML + CSS
 
-##HTML CSS Project
+## Link to the website overview
 
-https://rawcdn.githack.com/allien-j/s106-web/683786f9fbce9557797600e9769613dd3b2c96a6/S106/index.html
+[Damajin Concept](https://rawcdn.githack.com/allien-j/s106-web/683786f9fbce9557797600e9769613dd3b2c96a6/S106/index.html)
